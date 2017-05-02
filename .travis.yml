@@ -1,2 +1,2 @@
 language: java
-script: ant cleanTestAll
+script: cd master;ant cleanTestAll
