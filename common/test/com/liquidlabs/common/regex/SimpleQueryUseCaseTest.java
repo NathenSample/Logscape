@@ -178,7 +178,7 @@ public class SimpleQueryUseCaseTest {
 	public void shouldWorkWithCOLLECTIVE_Pipes() throws Exception {
 		String text = "2010/06/16 16:16:27|datapair|info|1196651b06098a7|sjrn|1196651b06098a7|blang|p1=usair|d_kphx,o_klga,c_c,b_0,l_,p_3,u_6more,r_1,g_na,v_dd,a_na,x_0,w_4,m_na,f_na,t_na,e_na,y_na,q_A,h_k,i_k,j_kl,k_kp,pr_na,s_2610,re_0,z_usair";
 		
-		//Hereís a typical log file where Iíd first narrow the search to records containing ìdatapairî 
+		//Here‚Äôs a typical log file where I‚Äôd first narrow the search to records containing ‚Äúdatapair‚Äù 
 		// and having a particular value of net=<value> (e.g. net=na)
 		String expression = "(*) (*)|(*)|(*)|(*)|(*)|(*)|(*)|(*)|(*)";
 		String regExp = convertor.convertSimpleToRegExp(expression);
@@ -192,7 +192,7 @@ public class SimpleQueryUseCaseTest {
 	public void shouldWorkWithCOLLECTIVE_DataPair() throws Exception {
 		String text = "10.24.154.78 - - [16/Jun/2010:08:43:40 -0500] GET /datapair?net=na&id=2010051116005452092621124345&pid=507&segs=,TX197_T,TX280_T,A20_Y,A22_Y,A57_Y, HTTP/1.1 request_time 0.003";
 		
-		//Hereís a typical log file where Iíd first narrow the search to records containing ìdatapairî 
+		//Heres a typical log file where I‚Äôd first narrow the search to records containing ‚Äúdatapair‚Äù 
 		// and having a particular value of net=<value> (e.g. net=na)
 		String expression = "(net)=(*)&(id=*)&(pid=*)&(segs)=(*)";
 		String regExp = convertor.convertSimpleToRegExp(expression);
