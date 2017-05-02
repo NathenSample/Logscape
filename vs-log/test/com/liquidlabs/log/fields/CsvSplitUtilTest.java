@@ -20,7 +20,7 @@ public class CsvSplitUtilTest {
     @Test
     public void shouldHandleSpecialCharacters(){
         CsvSplitUtil splitter = new CsvSplitUtil();
-        String[] split = splitter.extract("year,Temp (°C) Dec-Feb,Rain (mm) Dec-Feb, Temp (°C) Jun-Aug");
+        String[] split = splitter.extract("year,Temp (C) Dec-Feb,Rain (mm) Dec-Feb, Temp (C) Jun-Aug");
         assertEquals(split.length, 4);
     }
 
